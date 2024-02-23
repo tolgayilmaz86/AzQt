@@ -1,63 +1,57 @@
-# cmake_template
+# AzQt GUI Framework
 
-[![ci](https://github.com/cpp-best-practices/cmake_template/actions/workflows/ci.yml/badge.svg)](https://github.com/cpp-best-practices/cmake_template/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/cpp-best-practices/cmake_template/branch/main/graph/badge.svg)](https://codecov.io/gh/cpp-best-practices/cmake_template)
-[![CodeQL](https://github.com/cpp-best-practices/cmake_template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/cpp-best-practices/cmake_template/actions/workflows/codeql-analysis.yml)
+AzQt is a user interface framwork to easily create user interfaces like Blender and [O3DE](https://o3de.org).
 
-## About cmake_template
+Note that this project is extracted and extended from the awesome 3D development libraray that Amazon owned opne Source project [O3DE](https://o3de.org)
 
-This is a C++ Best Practices GitHub template for getting up and running with C++ quickly.
+Note that this project will detached as much as possible from the O3DE library and provide a standalone framework for those who want to create applications rather than a game engine. Besides it will add such applications as showcase without or with minimum functionality.
 
-By default (collectively known as `ENABLE_DEVELOPER_MODE`)
+## Installation
 
- * Address Sanitizer and Undefined Behavior Sanitizer enabled where possible
- * Warnings as errors
- * clang-tidy and cppcheck static analysis
- * CPM for dependencies
+The project will serve both Visual Studio projects as well as CMake project
 
-It includes
+### VcPkg
 
- * a basic CLI example
- * examples for fuzz, unit, and constexpr testing
- * large github action testing matrix
+To keep dependency management minimum [vcpkg](https://vcpkg.io/en/) is used with the following dependencies;
 
-It requires
+- Qt
 
- * cmake
- * a compiler
+``` sh
+git clone https://github.com/Microsoft/vcpkg.git
+---------------------------------------
+.\vcpkg\bootstrap-vcpkg.bat # windows
+----------------------------------------
+./vcpkg/bootstrap-vcpkg.sh # Unix
+```
 
+### Platforms
 
-This project gets you started with a simple example of using FTXUI, which happens to also be a game.
+Windows, Linux and Mac Support will be provided.
 
+## Screenshots
 
-## Getting Started
-
-### Use the Github template
-First, click the green `Use this template` button near the top of this page.
-This will take you to Github's ['Generate Repository'](https://github.com/cpp-best-practices/cmake_template/generate) page.
-Fill in a repository name and short description, and click 'Create repository from template'.
-This will allow you to create a new repository in your Github account,
-prepopulated with the contents of this project.
-
-After creating the project please wait until the cleanup workflow has finished 
-setting up your project and commited the changes.
-
-Now you can clone the project locally and get to work!
-
-    git clone https://github.com/<user>/<your_new_repo>.git
-
-## More Details
-
- * [Dependency Setup](README_dependencies.md)
- * [Building Details](README_building.md)
- * [Docker](README_docker.md)
-
-## Testing
-
-See [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
-
-## Fuzz testing
-
-See [libFuzzer Tutorial](https://github.com/google/fuzzing/blob/master/tutorial/libFuzzerTutorial.md)
-
-
+![buttons](gallery/buttons.png)
+![Text Inputs](gallery/textboxes.png)
+![Line Edits](gallery/lineedits.png)
+![check box](gallery/checkboxes.png)
+![Radio Button](gallery/radio_buttons.png)
+![Combo Boxes](gallery/combobox.png)
+![cards](gallery/cards.png)
+![link](gallery/hyperlink.png)
+![Slider](gallery/sliders.png)
+![Tabs](gallery/tabs.png)
+![Segments](gallery/tabs_segments.png)
+![Toolbar](gallery/toolbar.png)
+![Color Picker1](gallery/colorpicker_hue.png)
+![Color Picker2](gallery/colorpicker_rgb.png)
+![Docking Feature](gallery/docking.png)
+![Drag & Drop](gallery/dragndrop.png)
+![Search Filter](gallery/filtered_search.png)
+![Gradient Slider](gallery/gradient_slider.png)
+![Progress Bars](gallery/progress_bar.png)
+![Property Editor](gallery/property_editor.png)
+![Right Menu](gallery/right_menu.png)
+![Table Views](gallery/tableviews.png)
+![Toggle Switch](gallery/toggle_switch.png)
+![Tree View](gallery/tree_views.png)
+![Font Render](gallery/typography.png)
