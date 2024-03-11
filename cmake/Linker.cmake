@@ -1,4 +1,4 @@
-macro(myproject_configure_linker project_name)
+macro(myproject_configure_linker AzQt)
   include(CheckCXXCompilerFlag)
 
   set(USER_LINKER_OPTION
@@ -26,6 +26,6 @@ macro(myproject_configure_linker project_name)
 
   check_cxx_compiler_flag(${LINKER_FLAG} CXX_SUPPORTS_USER_LINKER)
   if(CXX_SUPPORTS_USER_LINKER)
-    target_compile_options(${project_name} INTERFACE ${LINKER_FLAG})
+    target_compile_options(${AzQt} INTERFACE ${LINKER_FLAG})
   endif()
 endmacro()

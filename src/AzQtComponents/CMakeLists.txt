@@ -1,64 +1,91 @@
-#
-# Copyright (c) Contributors to the Open 3D Engine Project.
-# For complete copyright and license terms please see the LICENSE at the root of this distribution.
-#
-# SPDX-License-Identifier: Apache-2.0 OR MIT
-#
-#
+cmake_minimum_required(VERSION 3.21)
 
-if(NOT PAL_TRAIT_BUILD_HOST_TOOLS)
-    return()
-endif()
+file(GLOB SOURCE_FILES "*.cpp" "*.qrc" "*.h" "*.ui" "*.png")
 
-o3de_pal_dir(pal_dir ${CMAKE_CURRENT_LIST_DIR}/Platform/${PAL_PLATFORM_NAME} ${O3DE_ENGINE_RESTRICTED_PATH} ${LY_ROOT_FOLDER})
+project(AzQtComponents)
 
-ly_add_target(
-    NAME AzQtComponents SHARED
-    NAMESPACE AZ
-    AUTOMOC
-    AUTOUIC
-    AUTORCC
-    FILES_CMAKE
-        AzQtComponents/azqtcomponents_files.cmake
-        AzQtComponents/Platform/${PAL_PLATFORM_NAME}/platform_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
-    PLATFORM_INCLUDE_FILES
-        Platform/${PAL_PLATFORM_NAME}/platform_${PAL_PLATFORM_NAME_LOWERCASE}.cmake
-    INCLUDE_DIRECTORIES
-        PRIVATE
-            AzQtComponents
-        PUBLIC
-            .
-            ${pal_dir}
-    COMPILE_DEFINITIONS
-        PRIVATE
-            AZ_QT_COMPONENTS_EXPORT_SYMBOLS
-    BUILD_DEPENDENCIES
-        PRIVATE
-            3rdParty::Qt::Core
-            3rdParty::Qt::Gui
-        PUBLIC
-            3rdParty::Qt::Widgets
-            3rdParty::Qt::Svg
-            3rdParty::Qt::Xml
-            AZ::AzCore
+list(APPEND CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019_64/bin")
+set(Qt_DIR "C:/Users/tolga.yilmaz/source/repos/o3de-packages/packages/qt-5.15.2-rev7-windows")
+include ("C:/Users/tolga.yilmaz/source/repos/o3de-packages/packages/qt-5.15.2-rev7-windows/FindQt.cmake")
+find_package(Qt REQUIRED COMPONENTS Core Gui Svg Widgets)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+file(GLOB_RECURSE AZQTCOMPONENTS_SOURCE_FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.cpp"
 )
 
-ly_add_target(
-    NAME AzQtGallery APPLICATION
-    NAMESPACE AZ
-    AUTOMOC
-    AUTOUIC
-    FILES_CMAKE
-        AzQtComponents/azqtcomponents_gallery_files.cmake
-    INCLUDE_DIRECTORIES
-        PRIVATE
-            .
-            AzQtComponents
-            AzQtComponents/Gallery
-            ${pal_dir}
-    BUILD_DEPENDENCIES
-        PRIVATE
-            3rdParty::Qt::Svg
-            3rdParty::Qt::Widgets
-            AZ::AzQtComponents
+# Find all header files in AzCore directory
+file(GLOB_RECURSE AZQTCOMPONENTS_HEADER_FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.h"
+)
+
+# Add your platform-specific source files here
+# set(platform_sources
+#     "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/Platform/${PAL_PLATFORM_NAME}/*.cpp"
+# )
+
+include("${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/Platform/${PAL_PLATFORM_NAME}/platform_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake")
+
+# Set the included CMake file as the platform_sources variable
+set(platform_sources ${platform_${PAL_PLATFORM_NAME_LOWERCASE}_files})
+
+add_library(
+    AzQtComponents SHARED
+    ${AZQTCOMPONENTS_SOURCE_FILES}
+    ${AZQTCOMPONENTS_HEADER_FILES}
+    ${platform_sources}
+)
+
+target_include_directories(
+    AzQtComponents
+    PRIVATE
+        AzQtComponents
+    PUBLIC
+        .
+)
+
+target_compile_definitions(
+    AzQtComponents
+    PRIVATE
+        AZ_QT_COMPONENTS_EXPORT_SYMBOLS
+)
+
+target_link_libraries(
+    AzQtComponents
+    PRIVATE
+        3rdParty::Qt::Core
+        3rdParty::Qt::Gui
+    PUBLIC
+        3rdParty::Qt::Widgets
+        3rdParty::Qt::Svg
+        3rdParty::Qt::Xml
+        AZ::AzCore
+)
+
+add_executable(
+    AzQtGallery
+    ${AZQTCOMPONENTS_SOURCE_FILES}
+    ${AZQTCOMPONENTS_HEADER_FILES}
+    ${SOURCE_FILES}
+)
+
+target_include_directories(
+    AzQtGallery
+    PRIVATE
+        .
+        AzQtComponents
+        AzQtComponents/Gallery
+)
+
+target_link_libraries(
+    AzQtGallery
+    PRIVATE
+        3rdParty::Qt::Core
+        3rdParty::Qt::Gui
+        3rdParty::Qt::Svg
+        3rdParty::Qt::Widgets
+        AZ::AzQtComponents
 )

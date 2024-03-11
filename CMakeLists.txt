@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 
+set(PAL_PLATFORM_NAME "Windows")  # Replace with the actual platform name
+set(PAL_PLATFORM_NAME_LOWERCASE "windows")  # Replace with the actual platform name in lowercase
+
 # This template attempts to be "fetch_content"-able
 # so that it works well with tools like CPM or other
 # manual dependency management
@@ -16,9 +19,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Set the project name and language
 project(
-  myproject
+  AzQt
   VERSION 0.0.1
-  DESCRIPTION ""
+  DESCRIPTION "Qt components"
   HOMEPAGE_URL "%%myurl%%"
   LANGUAGES CXX C)
 
@@ -104,7 +107,6 @@ include(cmake/PackageProject.cmake)
 # we know we want to ship
 myproject_package_project(
   TARGETS
-  intro
   myproject_options
   myproject_warnings
   # FIXME: this does not work! CK
