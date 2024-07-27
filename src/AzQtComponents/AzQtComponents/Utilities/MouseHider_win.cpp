@@ -5,8 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  *
  */
-
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 
 #include <AzQtComponents/Utilities/MouseHider.h>
 

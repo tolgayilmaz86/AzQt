@@ -11,22 +11,43 @@ include("./FindQt.cmake")
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 # Find all header files in AzCore directory
 file(GLOB_RECURSE AZCORE_HEADER_FILES
     "${CMAKE_CURRENT_SOURCE_DIR}/../AzCore/*.h"
 )
-# include_directories(${AZCORE_HEADER_FILES})
 
 file(GLOB_RECURSE AZQTCOMPONENTS_SOURCE_FILES
-    "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.cpp"
 )
 
 # Find all header files in AzComponents directory
 file(GLOB_RECURSE AZQTCOMPONENTS_HEADER_FILES
-    "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.h"
+"${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.h"
 )
-# include_directories(${AZQTCOMPONENTS_HEADER_FILES})
+
+# include_directories(${AZCORE_HEADER_FILES})
+include_directories(${AZQTCOMPONENTS_HEADER_FILES})
+
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+add_library(
+    AzQtComponents SHARED
+    ${AZQTCOMPONENTS_SOURCE_FILES}
+    ${AZQTCOMPONENTS_HEADER_FILES}
+    ${platform_sources}
+)
+
+target_include_directories(
+    AzQtComponents
+    PRIVATE
+        AzQtComponents
+    PUBLIC
+        ../AzCore
+        ${AZQTCOMPONENTS_HEADER_FILES}
+        .
+)
 
 # Add your platform-specific source files here
 set(platform_sources
@@ -40,25 +61,16 @@ set(PAL_PLATFORM_FILES_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Platform/${PAL_PLATFORM_
 set(PAL_PLATFORM_FILES_CMAKE "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/Platform/${PAL_PLATFORM_NAME}/platform_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake")
 # Set the included CMake file as the platform_sources variable
 set(platform_sources ${platform_${PAL_PLATFORM_NAME_LOWERCASE}_files})
-add_library(
-    AzQtComponents SHARED
-    ${AZQTCOMPONENTS_SOURCE_FILES}
-    ${AZQTCOMPONENTS_HEADER_FILES}
-    ${platform_sources}
+
+target_sources(AzQtComponents
+    PUBLIC 
+        ${PAL_PLATFORM_FILES_CMAKE}
 )
 
 target_include_directories(
     AzQtComponents
     PRIVATE
         ${PAL_PLATFORM_FILES_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/../AzCore
-        AzQtComponents
-    PUBLIC
-        ${AZQTCOMPONENTS_HEADER_FILES}
-        .
-)
-target_sources(AzQtComponents
-    PRIVATE ${PAL_PLATFORM_FILES_CMAKE}
 )
 
 target_link_libraries(

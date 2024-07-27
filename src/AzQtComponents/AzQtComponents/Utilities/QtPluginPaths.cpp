@@ -6,7 +6,7 @@
  *
  */
 
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 #include <AzQtComponents/Utilities/QtPluginPaths.h>
 #include <QApplication>
 #include <QDir>

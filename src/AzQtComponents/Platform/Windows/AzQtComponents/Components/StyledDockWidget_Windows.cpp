@@ -6,7 +6,7 @@
  *
  */
 
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 
 #include <QTimer>
 #include <QtWinExtras/QtWin>

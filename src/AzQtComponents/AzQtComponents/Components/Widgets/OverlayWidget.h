@@ -128,7 +128,6 @@ namespace AzQtComponents
         static int PushLayer(OverlayWidget* targetOverlay, Internal::OverlayWidgetLayer* layer, bool hasBreakoutWindow);
 
         int m_layerIdCounter;
-        AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING
         QVector<LayerInfo> m_layers;
         QStackedLayout* m_stack;
         int m_rootIndex;

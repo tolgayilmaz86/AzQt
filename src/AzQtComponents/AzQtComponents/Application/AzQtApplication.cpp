@@ -5,9 +5,9 @@
  *
  */
 
+#include <AzQtComponents/AzQtComponentsAPI.h>
 #include <AzQtComponents/Application/AzQtApplication.h>
 
-#include <AzCore/PlatformIncl.h> // This should be the first include to make sure Windows.h is defined with NOMINMAX
 #include <AzQtComponents/Utilities/QtPluginPaths.h>
 
 namespace AzQtComponents

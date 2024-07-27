@@ -6,7 +6,7 @@
  *
  */
 
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 
 #include <AzQtComponents/Components/GlobalEventFilter.h>
 #include <AzQtComponents/Components/StyledDockWidget.h>
@@ -26,9 +26,9 @@ int main(int argc, char **argv)
     //const AZ::Debug::Trace tracer;
     //ComponentApplicationWrapper componentApplicationWrapper;
 
-    QApplication::setOrganizationName("O3DE");
+    QApplication::setOrganizationName("AzQt");
     QApplication::setOrganizationDomain("o3de.org");
-    QApplication::setApplicationName("O3DEWidgetGallery");
+    QApplication::setApplicationName("AzQtWidgetGallery");
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);

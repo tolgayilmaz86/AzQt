@@ -6,7 +6,7 @@
  *
  */
 
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 #include <qglobal.h> // For Q_OS_WIN
 
 #include <AzQtComponents/Components/WindowDecorationWrapper.h>

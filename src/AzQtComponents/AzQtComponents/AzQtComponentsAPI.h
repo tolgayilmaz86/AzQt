@@ -22,7 +22,20 @@
  * the best patterns and practices when making a tool to comfortably integrate with
  * the Open 3D Engine editor, see the [Tools UI Developer's Guide](https://www.o3de.org/docs/tools-ui/).
  */
-#include <AzCore/PlatformDef.h>
+#define AZ_PLATFORM_WINDOWS
+
+#if defined(__clang__)
+    #define AZ_COMPILER_CLANG   __clang_major__
+#elif defined(__GNUC__)
+    //  Assign AZ_COMPILER_GCC to a number that represents the major+minor (2 digits) + path level (2 digits)  i.e. 3.2.0 == 30200
+    #define AZ_COMPILER_GCC     (__GNUC__ * 10000 \
+                               + __GNUC_MINOR__ * 100 \
+                               + __GNUC_PATCHLEVEL__)
+#elif defined(_MSC_VER)
+    #define AZ_COMPILER_MSVC    _MSC_VER
+#else
+#   error This compiler is not supported
+#endif
 
 #if defined(AZ_QT_COMPONENTS_STATIC)
     // if we're statically linking, then we don't need to export or import symbols
@@ -32,7 +45,26 @@
 #else
     #define AZ_QT_COMPONENTS_API AZ_DLL_IMPORT
 #endif
+#if defined(AZ_COMPILER_CLANG) || defined(AZ_COMPILER_GCC)
+    #define AZ_DLL_EXPORT               AZ_TRAIT_OS_DLL_EXPORT_CLANG
+    #define AZ_DLL_IMPORT               AZ_TRAIT_OS_DLL_IMPORT_CLANG
+#elif defined(AZ_COMPILER_MSVC)
+    #define AZ_DLL_EXPORT               __declspec(dllexport)
+    #define AZ_DLL_IMPORT               __declspec(dllimport)
+#endif
 
+#define WIN32_LEAN_AND_MEAN
+#define UNICODE
+#if !defined(_WIN32_WINNT) || (_WIN32_WINNT < 0x0602)
+    #undef _WIN32_WINNT
+    #define _WIN32_WINNT 0x0602   // Windows Server 2012 and later
+#endif
+#if !defined(NOMINMAX)
+    #define NOMINMAX    // - Dont define Macros min(a,b) and max(a,b)
+#endif
+
+#include <WinSock2.h>
+#include <windows.h>
 namespace AzQtComponents
 {
     constexpr const char* HasSearchAction = "HasSearchAction";

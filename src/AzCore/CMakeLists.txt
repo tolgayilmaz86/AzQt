@@ -23,7 +23,7 @@ add_library(AzCore STATIC ${AZCORE_SOURCE_FILES} ${AZCORE_HEADER_FILES})
 
 # Set target properties
 target_include_directories(AzCore
-    PRIVATE AzCore
+    PUBLIC AzCore
 )
 set(PAL_PLATFORM_NAME "Windows")
 set(PAL_PLATFORM_NAME_LOWERCASE "windows")

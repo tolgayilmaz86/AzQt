@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <AzCore/PlatformIncl.h>
+#include <AzQtComponents/AzQtComponentsAPI.h>
 #if !defined(Q_MOC_RUN)
 #include <AzQtComponents/Components/TitleBarOverdrawHandler.h>
 

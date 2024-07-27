@@ -181,7 +181,6 @@ namespace AzQtComponents
         bool WidgetContainsPoint(QWidget* widget, const QPoint& pos) const;
 
         QMainWindow* m_mainWindow;
-        AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING
         QList<QScreen*> m_desktopScreens;
 
 #ifdef AZ_PLATFORM_WINDOWS

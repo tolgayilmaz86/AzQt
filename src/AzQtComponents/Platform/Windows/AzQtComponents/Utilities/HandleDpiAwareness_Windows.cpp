@@ -8,7 +8,6 @@
 
 #include <AzQtComponents/Utilities/HandleDpiAwareness.h>
 
-#include <AzCore/PlatformIncl.h>
 #include <array>
 #include <string>
 

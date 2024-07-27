@@ -9,7 +9,6 @@
 #pragma once
 
 #if !defined(Q_MOC_RUN)
-#include <AzCore/PlatformDef.h>
 
 #include <QInputDialog>
 #include <QLineEdit>
