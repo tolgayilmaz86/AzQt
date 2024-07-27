@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtGallery_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Application\AzQtApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\AutoCustomWindowDecorations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ButtonDivider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ButtonStripe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ConfigHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockBarButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockMainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockTabBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockTabWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ExtendedLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDocking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDockingDropZoneWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDockingGhostWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FilteredSearchWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FlowLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\GlobalEventFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\HelpButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\InputDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\InteractiveWindowGeometryChanger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\SearchLineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Style.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyleSheetCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledBusyLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDetailsTableModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDetailsTableView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDockWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledLineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledSpinBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StylesheetPreprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TagSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawHandler_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawScreenHandler_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Titlebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToastNotification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToastNotificationConfiguration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolBarArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonLineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonWithWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\VectorEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetBrowserFolderWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderTableView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderThumbnailView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\BreadCrumbs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\BrowseEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CardHeader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CardNotification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CheckBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorComponentSliders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorHexEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorPreview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorRGBAEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorWarning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\GammaEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\Palette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteCardCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\Swatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\DialogButtonBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\DragAndDrop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ElidingLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Eyedropper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\FileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\GradientSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Internal\OverlayWidgetLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Internal\RectangleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\LineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\LogicalTabOrderingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\MessageBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\OverlayWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ProgressBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\PushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\RadioButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ScrollBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SegmentBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SegmentControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SliderCombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SpinBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\StatusBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TabWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TabWidgetActionToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TableView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ToolButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TreeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\VectorInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\WindowDecorationWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\AssetBrowserFolderPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\BreadCrumbsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\BrowseEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ButtonPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\CardPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\CheckBoxPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ColorLabelPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ColorPickerPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ComboBoxPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ComponentDemoWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\DragAndDropPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\FilteredSearchWidgetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\FixedStateButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\GradientSliderPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\HyperlinkPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\LineEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\MenuPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ProgressIndicatorPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\RadioButtonPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ScrollBarPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SegmentControlPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SliderComboPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SliderPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SpinBoxPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SplitterPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\StyleSheetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SvgLabelPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TabWidgetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TableViewPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ToggleSwitchPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ToolBarPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TypographyPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\PropertyInput\PropertyInputWidgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ColorUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\Conversions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\HandleDpiAwareness.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\MouseHider_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\MouseHider_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\PixmapScaleUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtPluginPaths.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtViewPaneEffects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtWindowUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtWindowUtilities_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtWindowUtilities_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\RandomNumberGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScreenGrabber_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScreenGrabber_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScreenUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\SelectionProxyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\TextUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtGallery_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtGallery_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtGallery_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Application\AzQtApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\AzQtComponentsAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Buses\DragAndDrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Buses\ShortcutDispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\AutoCustomWindowDecorations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ButtonDivider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ButtonStripe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ConfigHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockBarButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockTabBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\DockTabWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ExtendedLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDocking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDockingDropZoneWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FancyDockingGhostWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FilteredSearchWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\FlowLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\GlobalEventFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\HelpButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\InputDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\InteractiveWindowGeometryChanger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\O3DEStylesheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\RepolishMinimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\SearchLineEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Style.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyleHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyleManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyleSheetCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledBusyLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDetailsTableModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDetailsTableView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledDockWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledLineEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StyledSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\StylesheetPreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TagSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawHandler_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\TitleBarOverdrawScreenHandler_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Titlebar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToastNotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToastNotificationConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolBarArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonLineEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\ToolButtonWithWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\VectorEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetBrowserFolderWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderTableView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\AssetFolderThumbnailView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\BreadCrumbs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\BrowseEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CardHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CardNotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\CheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorComponentSliders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorHexEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorPreview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorRGBAEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\ColorWarning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\GammaEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\Palette.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteCardCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\PaletteView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ColorPicker\Swatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\DialogButtonBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\DragAndDrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ElidingLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Eyedropper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\FileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\GradientSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Internal\OverlayWidgetLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Internal\RectangleWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\LineEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\LogicalTabOrderingWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\MessageBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\OverlayWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ProgressBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\PushButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\RadioButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ScrollBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SegmentBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SegmentControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SliderCombo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\SpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\StatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TabWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TabWidgetActionToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TableView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\Text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\ToolButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\TreeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\Widgets\VectorInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Components\WindowDecorationWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\DragAndDrop\MainWindowDragAndDrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\DragAndDrop\ViewportDragAndDrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\AssetBrowserFolderPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\BreadCrumbsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\BrowseEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ButtonPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\CardPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\CheckBoxPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ColorLabelPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ColorPickerPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ComboBoxPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ComponentDemoWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\DragAndDropPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\FilteredSearchWidgetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\FixedStateButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\GradientSliderPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\HyperlinkPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\LineEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\MenuPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ProgressIndicatorPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\RadioButtonPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ScrollBarPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SegmentControlPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SliderComboPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SliderPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SpinBoxPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SplitterPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\StyleSheetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\SvgLabelPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TabWidgetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TableViewPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ToggleSwitchPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\ToolBarPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Gallery\TypographyPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\PropertyInput\PropertyInputWidgets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\AutoSettingsGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ColorUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\Conversions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\DesktopUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\HandleDpiAwareness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\MouseHider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\PixmapScaleUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtPluginPaths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtViewPaneEffects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\QtWindowUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\RandomNumberGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScopedCleanup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScreenGrabber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\ScreenUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\SelectionProxyModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\AzQtComponents\Utilities\TextUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\AzQt\src\AzQtComponents\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5B7D6F6A-E54E-374E-BC36-3C906E63E7A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{10B17716-A301-3239-ADFB-CBA537C7C572}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
