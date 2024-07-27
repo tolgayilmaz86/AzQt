@@ -135,7 +135,6 @@ namespace AzQtComponents
 
         Qt::DockWidgetAreas m_originalDockWidgetAreas;
         QPointer<QDockWidget> m_parentDockWidget;
-        AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING
     };
 } // namespace AzQtComponents
 

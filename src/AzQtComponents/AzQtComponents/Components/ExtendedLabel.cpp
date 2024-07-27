@@ -7,9 +7,7 @@
  */
 
 #include "ExtendedLabel.h"
-AZ_PUSH_DISABLE_WARNING(4251 4244, "-Wunknown-warning-option") // 4251: 'QVariant::d': struct 'QVariant::Private' needs to have dll-interface to be used by clients of class 'QVariant'
 #include <QVariant>
-AZ_POP_DISABLE_WARNING
 
 namespace AzQtComponents
 {

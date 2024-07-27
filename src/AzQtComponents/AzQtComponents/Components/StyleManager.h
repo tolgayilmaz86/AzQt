@@ -15,10 +15,8 @@
 #include <QObject>
 #include <QColor>
 #include <QHash>
-AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: 'AzQtComponents::StyleManager::m_widgetToStyleSheetMap': class 'QHash<QWidget *,QString>' needs to have dll-interface to be used by clients of class 'AzQtComponents::StyleManager'
 #include <QPointer>
 #endif
-AZ_POP_DISABLE_WARNING
 
 class QApplication;
 class QStyle;
@@ -118,13 +116,11 @@ namespace AzQtComponents
         TitleBarOverdrawHandler* m_titleBarOverdrawHandler = nullptr;
 
         using WidgetToStyleSheetMap = QHash<QWidget*, QString>;
-        AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: 'AzQtComponents::StyleManager::m_widgetToStyleSheetMap': class 'QHash<QWidget *,QString>' needs to have dll-interface to be used by clients of class 'AzQtComponents::StyleManager'
         WidgetToStyleSheetMap m_widgetToStyleSheetMap;
         QStyleSheetStyle* m_styleSheetStyle = nullptr;
 
         // Track the style as a QPointer, as the QApplication will delete it if it still has a pointer to it
         QPointer<QStyle> m_style;
-        AZ_POP_DISABLE_WARNING
 
         AutoCustomWindowDecorations* m_autoCustomWindowDecorations = nullptr;
     };

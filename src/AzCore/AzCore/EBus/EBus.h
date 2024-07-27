@@ -830,9 +830,7 @@ namespace AZ
     /// Helper macro to deprecate the helper typedef EBus<_Interface, _BusTraits> _BusName
     /// Where _Interface is a deprecated EBus API class and/or _BusTraits is a deprecated EBusTraits class
 #   define DEPRECATE_EBUS_WITH_TRAITS(_Interface, _BusTraits, _BusName, _message)       \
-    AZ_PUSH_DISABLE_WARNING(4996, "-Wdeprecated-declarations")                          \
     typedef AZ::EBus<_Interface, _BusTraits> DeprecatedBus_##_Interface##_BusTraits;    \
-    AZ_POP_DISABLE_WARNING                                                              \
     AZ_DEPRECATED(typedef DeprecatedBus_##_Interface##_BusTraits _BusName, _message);
 
     // The macros below correspond to functions in BusImpl.h.
@@ -1060,8 +1058,6 @@ namespace AZ
         s_callstack = nullptr;
     }
 
-//AZ_PUSH_DISABLE_WARNING(4127, "-Wunknown-warning-option")
-
     //=========================================================================
     // Connect
     //=========================================================================
@@ -1145,8 +1141,6 @@ namespace AZ
 
         handler = nullptr;
     }
-
-//AZ_POP_DISABLE_WARNING
 
     //=========================================================================
     // GetTotalNumOfEventHandlers

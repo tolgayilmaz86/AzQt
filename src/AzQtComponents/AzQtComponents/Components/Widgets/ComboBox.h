@@ -10,13 +10,11 @@
 #if !defined(Q_MOC_RUN)
 #include <AzQtComponents/AzQtComponentsAPI.h>
 
-AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: class '...' needs to have dll-interface to be used by clients of class '...'
 #include <QColor>
 #include <QPointer>
 #include <QStyle>
 #include <QValidator>
 #endif
-AZ_POP_DISABLE_WARNING
 
 class QComboBox;
 class QSettings;
@@ -78,9 +76,7 @@ namespace AzQtComponents
     private:
         friend class Style;
 
-        AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: class '...' needs to have dll-interface to be used by clients of class '...'
         static QPointer<ComboBoxWatcher> s_comboBoxWatcher;
-        AZ_POP_DISABLE_WARNING
         
         static unsigned int s_watcherReferenceCount;
 

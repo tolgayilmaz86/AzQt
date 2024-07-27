@@ -9,7 +9,7 @@ set(PAL_PLATFORM_NAME_LOWERCASE "windows")  # Replace with the actual platform n
 
 # Only set the cxx_standard if it is not set by someone else
 if (NOT DEFINED CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 17)
+  set(CMAKE_CXX_STANDARD 20)
 endif()
 
 # strongly encouraged to enable this globally to avoid conflicts between
@@ -29,24 +29,24 @@ include(cmake/PreventInSourceBuilds.cmake)
 include(ProjectOptions.cmake)
 
 
-myproject_setup_options()
+AzQt_setup_options()
 
-myproject_global_options()
+AzQt_global_options()
 include(Dependencies.cmake)
-myproject_setup_dependencies()
+AzQt_setup_dependencies()
 
-myproject_local_options()
+AzQt_local_options()
 
 # don't know if this should be set globally from here or not...
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-target_compile_features(myproject_options INTERFACE cxx_std_${CMAKE_CXX_STANDARD})
+target_compile_features(AzQt_options INTERFACE cxx_std_${CMAKE_CXX_STANDARD})
 
-add_library(myproject::myproject_options ALIAS myproject_options)
-add_library(myproject::myproject_warnings ALIAS myproject_warnings)
+add_library(AzQt::AzQt_options ALIAS AzQt_options)
+add_library(AzQt::AzQt_warnings ALIAS AzQt_warnings)
 
-#add_library(myproject::myproject_options INTERFACE IMPORTED)
-#add_library(myproject::myproject_warnings INTERFACE IMPORTED)
+#add_library(AzQt::AzQt_options INTERFACE IMPORTED)
+#add_library(AzQt::AzQt_warnings INTERFACE IMPORTED)
 
 # configure files based on CMake configuration options
 add_subdirectory(configured_files)
@@ -78,10 +78,10 @@ include(cmake/PackageProject.cmake)
 
 # Add other targets that you want installed here, by default we just package the one executable
 # we know we want to ship
-myproject_package_project(
+AzQt_package_project(
   TARGETS
-  myproject_options
-  myproject_warnings
+  AzQt_options
+  AzQt_warnings
   # FIXME: this does not work! CK
   # PRIVATE_DEPENDENCIES_CONFIGURED project_options project_warnings
 )

@@ -10,13 +10,11 @@
 #if !defined(Q_MOC_RUN)
 #include <AzQtComponents/AzQtComponentsAPI.h>
 
-AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: class '...' needs to have dll-interface to be used by clients of class '...'
 #include <QPainterPath>
 #include <QPointer>
 #include <QProxyStyle>
 #include <QScopedPointer>
 #include <QVariant>
-AZ_POP_DISABLE_WARNING
 #endif
 
 class QEvent;
@@ -181,9 +179,7 @@ namespace AzQtComponents
     private:
         void repolishWidgetDestroyed(QObject* obj);
 
-        AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // needs to have dll-interface to be used by clients of class 'AzQtComponents::LineEdit'
         QScopedPointer<Data> m_data;
-        AZ_POP_DISABLE_WARNING
 
         // To be used when text alignment has to be forced from outside Qt
         mutable QVariant m_drawItemTextAlignmentOverride;

@@ -11,7 +11,6 @@
 #include <AzQtComponents/Components/StyleManager.h>
 #include <AzQtComponents/Components/ConfigHelpers.h>
 
-AZ_PUSH_DISABLE_WARNING(4244 4251, "-Wunknown-warning-option")
 #include <QAbstractItemView>
 #include <QApplication>
 #include <QComboBox>
@@ -24,7 +23,6 @@ AZ_PUSH_DISABLE_WARNING(4244 4251, "-Wunknown-warning-option")
 #include <QToolButton>
 
 #include <QtWidgets/private/qstylesheetstyle_p.h>
-AZ_POP_DISABLE_WARNING
 
 namespace AzQtComponents
 {

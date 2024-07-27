@@ -100,9 +100,7 @@ namespace AzQtComponents
 
             void validate();
 
-            AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 'AzQtComponents::Internal::ColorController::m_state': class 'QScopedPointer<AzQtComponents::Internal::ColorController::ColorState,QScopedPointerDeleter<T>>' needs to have dll-interface to be used by clients of class 'AzQtComponents::Internal::ColorController'
             QScopedPointer<ColorState> m_state;
-            AZ_POP_DISABLE_WARNING
         };
     }
 } // namespace AzQtComponents

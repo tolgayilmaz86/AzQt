@@ -63,7 +63,6 @@ namespace AzQtComponents
 
         QString preprocess(QString styleFileName, QString loadedStyleSheet);
         QString findStyleSheetPath(const QString& styleFileName);
-        AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // 4251: 'AzQtComponents::StyleSheetCache::m_styleSheetCache': class 'QHash<QString,QString>' needs to have dll-interface to be used by clients of class 'AzQtComponents::StyleSheetCache'
         QHash<QString, QString> m_styleSheetCache;
 
         QSet<QString> m_processingFiles;
@@ -77,7 +76,6 @@ namespace AzQtComponents
         QMap<QString, QString> m_diskToQrcMap;
 
         QString m_fallbackPrefix;
-        AZ_POP_DISABLE_WARNING
 };
 
 } // namespace AzQtComponents

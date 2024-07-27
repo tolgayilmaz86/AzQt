@@ -1,4 +1,4 @@
-macro(myproject_configure_linker AzQt)
+macro(AzQt_configure_linker AzQt)
   include(CheckCXXCompilerFlag)
 
   set(USER_LINKER_OPTION

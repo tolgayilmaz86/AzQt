@@ -64,8 +64,6 @@ namespace AzQtComponents
         DockTabBar* m_tabBar;
         QWidget* m_mainEditorWindow;
 
-        AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING
         QMap<QDockWidget*, QMetaObject::Connection> m_titleBarChangedConnections;
-        AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING
     };
 } // namespace AzQtComponents

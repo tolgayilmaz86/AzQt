@@ -366,15 +366,11 @@ namespace AzQtComponents
         void UpdateTextFilter();
 
     protected:
-        AZ_PUSH_DISABLE_WARNING(4127 4251, "-Wunknown-warning-option") // conditional expression is constant, needs to have dll-interface to be used by clients of class 'AzQtComponents::FilteredSearchWidget'
             SearchTypeFilterList m_typeFilters;
-        AZ_POP_DISABLE_WARNING
             FlowLayout* m_flowLayout;
         Ui::FilteredSearchWidget* m_ui;
         SearchTypeSelector* m_selector;
-        AZ_PUSH_DISABLE_WARNING(4251, "-Wunknown-warning-option") // needs to have dll-interface to be used by clients of class 'AzQtComponents::FilteredSearchWidget'
             QMap<int, FilterCriteriaButton*> m_typeButtons;
-        AZ_POP_DISABLE_WARNING
             bool m_textFilterFillsWidth;
         bool m_displayEnabledFilters;
         FilterTextButton* m_filterTextButton = nullptr;
