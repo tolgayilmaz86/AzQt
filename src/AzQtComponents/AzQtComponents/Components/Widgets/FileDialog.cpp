@@ -6,7 +6,6 @@
  *
  */
 
-#include <AzQtComponents/AzQtComponents_Traits_Platform.h>
 #include <AzQtComponents/Components/Widgets/FileDialog.h>
 
 #include <QMessageBox>
@@ -56,7 +55,7 @@ namespace AzQtComponents
                 {
                     shouldPromptAgain = false;
                 }
-#if AZ_TRAIT_AZQTCOMPONENTS_FILE_DIALOG_APPLY_MISSING_EXTENSION
+
                 // If a filter was selected, then make sure that the resulting filename ends with that extension. On systems that use the default QFileDialog, 
                 // the extension is not guaranteed to be set in the resulting filename
                 if (FileDialog::ApplyMissingExtension(localSelectedFilter, filePath))
@@ -73,7 +72,6 @@ namespace AzQtComponents
                         shouldPromptAgain = (overwriteSelection == QMessageBox::No);
                     }
                 }
-#endif // AZ_TRAIT_AZQTCOMPONENTS_FILE_DIALOG_APPLY_MISSING_EXTENSION
             }
             else
             {
@@ -132,7 +130,7 @@ namespace AzQtComponents
         for (const QString& filterExtensionFull : filterExtensionsFull)
         {
             QString wildcardExpression = QRegularExpression::wildcardToRegularExpression(filterExtensionFull);
-            QRegularExpression filterPattern(wildcardExpression, AZ_TRAIT_AZQTCOMPONENTS_FILE_DIALOG_FILTER_CASE_SENSITIVITY);
+            QRegularExpression filterPattern(wildcardExpression, QRegularExpression::CaseInsensitiveOption);
             QRegularExpressionMatch filterPatternMatch = filterPattern.match(fileInfo.fileName());
             if (filterPatternMatch.hasMatch())
             {

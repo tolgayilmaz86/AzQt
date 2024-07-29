@@ -11,7 +11,6 @@
 #include <AzQtComponents/Components/Style.h>
 #include <AzQtComponents/Components/StyleManager.h>
 #include <AzQtComponents/Components/ConfigHelpers.h>
-//#include <AzCore/Casting/numeric_cast.h>
 
 #include <QHeaderView>
 #include <QPainter>

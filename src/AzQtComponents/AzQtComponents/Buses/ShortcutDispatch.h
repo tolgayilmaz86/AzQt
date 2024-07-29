@@ -61,4 +61,4 @@ namespace AzQtComponents
     };
     using ShortcutDispatchBus = AZ::EBus<ShortcutDispatchTraits>;
 
-} // namespace AzToolsFramework
+} // namespace AzQtComponents

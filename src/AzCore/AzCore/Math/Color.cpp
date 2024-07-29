@@ -181,4 +181,383 @@ namespace AZ
         const Color DarkSlateGray             { 0.184f, 0.310f, 0.310f, 1.000f }; // RGB: (47, 79, 79)
         const Color DarkSlateGrey             { 0.184f, 0.310f, 0.310f, 1.000f }; // RGB: (47, 79, 79)
     }
+
+    
+    __forceinline Color::Color(const Vector2& source)
+    {
+        m_color = Vector4(source);
+    }
+
+    __forceinline Color::Color(const Vector3& source)
+    {
+        m_color = Vector4(source);
+    }
+
+    __forceinline Color::Color(float rgba)
+        : m_color(rgba)
+    {
+        ;
+    }
+
+    __forceinline Color::Color(float r, float g, float b, float a)
+        : m_color(r, g, b, a)
+    {
+        ;
+    }
+
+    __forceinline Color::Color(u8 r, u8 g, u8 b, u8 a)
+    {
+        SetR8(r);
+        SetG8(g);
+        SetB8(b);
+        SetA8(a);
+    }
+
+
+    __forceinline Color Color::CreateZero()
+    {
+        return Color(Vector4::CreateZero());
+    }
+
+
+    __forceinline Color Color::CreateOne()
+    {
+        return Color(1.0f);
+    }
+
+
+    __forceinline Color Color::CreateFromRgba(u8 r, u8 g, u8 b, u8 a)
+    {
+        return Color(r,g,b,a);
+    }
+
+
+    __forceinline Color Color::CreateFromFloat4(const float* values)
+    {
+        Color result;
+        result.Set(values);
+        return result;
+    }
+
+
+    __forceinline Color Color::CreateFromVector3(const Vector3& v)
+    {
+        Color result;
+        result.Set(v);
+        return result;
+    }
+
+
+    __forceinline Color Color::CreateFromVector3AndFloat(const Vector3& v, float w)
+    {
+        Color result;
+        result.Set(v, w);
+        return result;
+    }
+
+
+    __forceinline u32 Color::CreateU32(u8 r, u8 g, u8 b, u8 a)
+    {
+        return (a << 24) | (b << 16) | (g << 8) | r;
+    }
+
+
+    __forceinline void Color::StoreToFloat4(float* values) const
+    {
+        m_color.StoreToFloat4(values);
+    }
+
+
+    __forceinline u8 Color::GetR8() const
+    {
+        return static_cast<u8>(m_color.GetX() * 255.0f);
+    }
+
+
+    __forceinline u8 Color::GetG8() const
+    {
+        return static_cast<u8>(m_color.GetY() * 255.0f);
+    }
+
+
+    __forceinline u8 Color::GetB8() const
+    {
+        return static_cast<u8>(m_color.GetZ() * 255.0f);
+    }
+
+
+    __forceinline u8 Color::GetA8() const
+    {
+        return static_cast<u8>(m_color.GetW() * 255.0f);
+    }
+
+
+    __forceinline void Color::SetR8(u8 r)
+    {
+        m_color.SetX(static_cast<float>(r) * (1.0f / 255.0f));
+    }
+
+
+    __forceinline void Color::SetG8(u8 g)
+    {
+        m_color.SetY(static_cast<float>(g) * (1.0f / 255.0f));
+    }
+
+
+    __forceinline void Color::SetB8(u8 b)
+    {
+        m_color.SetZ(static_cast<float>(b) * (1.0f / 255.0f));
+    }
+
+
+    __forceinline void Color::SetA8(u8 a)
+    {
+        m_color.SetW(static_cast<float>(a) * (1.0f / 255.0f));
+    }
+
+
+    __forceinline float Color::GetR() const
+    {
+        return m_color.GetX();
+    }
+
+
+    __forceinline float Color::GetG() const
+    {
+        return m_color.GetY();
+    }
+
+
+    __forceinline float Color::GetB() const
+    {
+        return m_color.GetZ();
+    }
+
+
+    __forceinline float Color::GetA() const
+    {
+        return m_color.GetW();
+    }
+
+
+    __forceinline float Color::GetElement(int32_t index) const
+    {
+        return m_color.GetElement(index);
+    }
+
+
+    __forceinline void Color::SetR(float r)
+    {
+        m_color.SetX(r);
+    }
+
+
+    __forceinline void Color::SetG(float g)
+    {
+        m_color.SetY(g);
+    }
+
+
+    __forceinline void Color::SetB(float b)
+    {
+        m_color.SetZ(b);
+    }
+
+
+    __forceinline void Color::SetA(float a)
+    {
+        m_color.SetW(a);
+    }
+
+
+    __forceinline void Color::Set(float x)
+    {
+        m_color.Set(x);
+    }
+
+
+    __forceinline void Color::Set(float r, float g, float b, float a)
+    {
+        m_color.Set(r, g, b, a);
+    }
+
+
+    __forceinline void Color::Set(const float values[4])
+    {
+        m_color.Set(values);
+    }
+
+
+    __forceinline void Color::Set(const Vector3& v)
+    {
+        m_color.Set(v);
+    }
+
+
+    __forceinline void Color::Set(const Vector3& color, float a)
+    {
+        m_color.Set(color, a);
+    }
+
+
+    __forceinline void Color::SetElement(int32_t index, float v)
+    {
+        m_color.SetElement(index, v);
+    }
+
+    __forceinline bool Color::IsClose(const Color& v, float tolerance) const
+    {
+        return m_color.IsClose(v.GetAsVector4(), tolerance);
+    }
+
+    __forceinline Vector4 Color::GetAsVector4() const
+    {
+        return m_color;
+    }
+
+    __forceinline bool Color::IsZero(float tolerance) const
+    {
+        return IsClose(CreateZero(), tolerance);
+    }
+
+    __forceinline bool Color::IsFinite() const
+    {
+        return m_color.IsFinite();
+    }
+
+    __forceinline bool Color::operator==(const Color& rhs) const
+    {
+        return m_color == rhs.m_color;
+    }
+
+
+    __forceinline bool Color::operator!=(const Color& rhs) const
+    {
+        return m_color != rhs.m_color;
+    }
+
+
+    __forceinline Color::operator Vector3() const
+    {
+        return m_color.GetAsVector3();
+    }
+
+
+    __forceinline Color::operator Vector4() const
+    {
+        return m_color;
+    }
+
+
+    __forceinline Color& Color::operator=(const Vector3& rhs)
+    {
+        Set(rhs);
+        return *this;
+    }
+
+
+    // Color to u32 => 0xAABBGGRR (COLREF format)
+    __forceinline u32 Color::ToU32() const
+    {
+        return CreateU32(GetR8(), GetG8(), GetB8(), GetA8());
+    }
+
+
+    // Color from u32 => 0xAABBGGRR (COLREF format)
+    __forceinline void Color::FromU32(u32 c)
+    {
+        SetA(static_cast<float>(c >> 24) * (1.0f / 255.0f));
+        SetB(static_cast<float>((c >> 16) & 0xff) * (1.0f / 255.0f));
+        SetG(static_cast<float>((c >> 8) & 0xff) * (1.0f / 255.0f));
+        SetR(static_cast<float>(c & 0xff) * (1.0f / 255.0f));
+    }
+
+    __forceinline Color Color::operator-() const
+    {
+        return Color(-m_color);
+    }
+
+
+    __forceinline Color Color::operator+(const Color& rhs) const
+    {
+        return Color(m_color + rhs.m_color);
+    }
+
+
+    __forceinline Color Color::operator-(const Color& rhs) const
+    {
+        return Color(m_color - rhs.m_color);
+    }
+
+
+    __forceinline Color Color::operator*(const Color& rhs) const
+    {
+        return Color(m_color * rhs.m_color);
+    }
+
+
+    __forceinline Color Color::operator/(const Color& rhs) const
+    {
+        return Color(m_color / rhs.m_color);
+    }
+
+
+    __forceinline Color Color::operator*(float multiplier) const
+    {
+        return Color(m_color * multiplier);
+    }
+
+
+    __forceinline Color Color::operator/(float divisor) const
+    {
+        return Color(m_color / divisor);
+    }
+
+
+    __forceinline Color& Color::operator+=(const Color& rhs)
+    {
+        *this = (*this) + rhs;
+        return *this;
+    }
+
+
+    __forceinline Color& Color::operator-=(const Color& rhs)
+    {
+        *this = (*this) - rhs;
+        return *this;
+    }
+
+
+    __forceinline Color& Color::operator*=(const Color& rhs)
+    {
+        *this = (*this) * rhs;
+        return *this;
+    }
+
+
+    __forceinline Color& Color::operator/=(const Color& rhs)
+    {
+        *this = (*this) / rhs;
+        return *this;
+    }
+
+
+    __forceinline Color& Color::operator*=(float multiplier)
+    {
+        *this = (*this) * multiplier;
+        return *this;
+    }
+
+
+    __forceinline Color& Color::operator/=(float divisor)
+    {
+        *this = (*this) / divisor;
+        return *this;
+    }
+
+
+    __forceinline const Color operator*(float multiplier, const Color& rhs)
+    {
+        return rhs * multiplier;
+    }
 }

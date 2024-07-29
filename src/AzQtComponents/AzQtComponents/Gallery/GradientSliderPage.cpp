@@ -11,7 +11,6 @@
 #include <AzQtComponents/Gallery/ui_GradientSliderPage.h>
 
 #include <AzQtComponents/Components/Widgets/GradientSlider.h>
-#include <AzCore/Casting/numeric_cast.h>
 
 GradientSliderPage::GradientSliderPage(QWidget* parent)
 : QWidget(parent)
@@ -20,15 +19,15 @@ GradientSliderPage::GradientSliderPage(QWidget* parent)
     ui->setupUi(this);
 
     ui->slider1->setColorFunction([](qreal position) {
-        return AzQtComponents::toQColor(1.0, 0.0, 0.0, aznumeric_cast<float>(position));
+        return AzQtComponents::toQColor(1.0, 0.0, 0.0, static_cast<float>(position));
     });
 
     ui->slider2->setColorFunction([](qreal position) {
-        return AzQtComponents::toQColor(aznumeric_cast<float>(position), 1.0, 0.5);
+        return AzQtComponents::toQColor(static_cast<float>(position), 1.0, 0.5);
     });
 
     ui->slider3->setColorFunction([](qreal position) {
-        return AzQtComponents::toQColor(0.0, 0.0, aznumeric_cast<float>(position));
+        return AzQtComponents::toQColor(0.0, 0.0, static_cast<float>(position));
     });
 
     QString exampleText = R"(

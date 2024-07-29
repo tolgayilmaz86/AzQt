@@ -8,7 +8,6 @@
 
 #include "ComponentDemoWidget.h"
 #include "AzQtComponents/Gallery/ui_ComponentDemoWidget.h"
-#include "AssetBrowserFolderPage.h"
 #include "BreadCrumbsPage.h"
 #include "BrowseEditPage.h"
 #include "ButtonPage.h"
@@ -25,7 +24,6 @@
 #include "MenuPage.h"
 #include "ProgressIndicatorPage.h"
 #include "RadioButtonPage.h"
-#include "ReflectedPropertyEditorPage.h"
 #include "ScrollBarPage.h"
 #include "SegmentControlPage.h"
 #include "SliderComboPage.h"
@@ -78,7 +76,6 @@ ComponentDemoWidget::ComponentDemoWidget(QWidget* parent)
     sortedPages.insert("Menu", new MenuPage(this));
     sortedPages.insert("Progress Indicator", new ProgressIndicatorPage(this));
     sortedPages.insert("Radio Button", new RadioButtonPage(this));
-    sortedPages.insert("Reflected Property Editor", new ReflectedPropertyEditorPage(this));
     sortedPages.insert("Scrollbar", new ScrollBarPage(this));
     sortedPages.insert("Segment Control", new SegmentControlPage(this));
     sortedPages.insert("Slider", new SliderPage(this));
@@ -97,8 +94,6 @@ ComponentDemoWidget::ComponentDemoWidget(QWidget* parent)
     sortedPages.insert("Toolbar", new ToolBarPage(this));
     sortedPages.insert("Tree View", new TreeViewPage(this));
     sortedPages.insert("Typography", new TypographyPage(this));
-
-    sortedPages.insert("AssetBrowserFolder", new AssetBrowserFolderPage(this));
 
     for (const auto& title : sortedPages.keys())
     {

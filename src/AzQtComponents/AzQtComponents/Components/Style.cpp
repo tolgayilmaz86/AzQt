@@ -37,7 +37,6 @@
 #include <AzQtComponents/Components/Widgets/ToolButton.h>
 #include <AzQtComponents/Components/Widgets/VectorInput.h>
 #include <AzQtComponents/Components/FilteredSearchWidget.h>
-#include <AzQtComponents/Components/Widgets/AssetFolderThumbnailView.h>
 #include <AzQtComponents/Components/Titlebar.h>
 #include <AzQtComponents/Components/StyledBusyLabel.h>
 #include <AzQtComponents/Components/TitleBarOverdrawHandler.h>
@@ -111,7 +110,6 @@ namespace AzQtComponents
         TableView::Config tableViewConfig;
         Text::Config textConfig;
         FilteredSearchWidget::Config filteredSearchWidgetConfig;
-        AssetFolderThumbnailView::Config assetFolderThumbnailViewConfig;
         TitleBar::Config titleBarConfig;
         Menu::Config menuConfig;
         ToolButton::Config toolButtonConfig;
@@ -182,7 +180,6 @@ namespace AzQtComponents
         loadConfig<TableView::Config, TableView>(this, &m_data->watcher, &m_data->tableViewConfig, "TableViewConfig.ini");
         loadConfig<Text::Config, Text>(this, &m_data->watcher, &m_data->textConfig, "TextConfig.ini");
         loadConfig<FilteredSearchWidget::Config, FilteredSearchWidget>(this, &m_data->watcher, &m_data->filteredSearchWidgetConfig, "FilteredSearchWidgetConfig.ini");
-        loadConfig<AssetFolderThumbnailView::Config, AssetFolderThumbnailView>(this, &m_data->watcher, &m_data->assetFolderThumbnailViewConfig, "AssetFolderThumbnailViewConfig.ini");
         loadConfig<TitleBar::Config, TitleBar>(this, &m_data->watcher, &m_data->titleBarConfig, "TitleBarConfig.ini");
         loadConfig<Menu::Config, Menu>(this, &m_data->watcher, &m_data->menuConfig, "MenuConfig.ini");
         loadConfig<ToolButton::Config, ToolButton>(this, &m_data->watcher, &m_data->toolButtonConfig, "ToolButtonConfig.ini");
@@ -1099,7 +1096,7 @@ namespace AzQtComponents
                 break;
             }
 
-            case QStyle::PM_MenuHPlacementOffset:
+            case QStyle::PM_MenuBarHMargin:
             {
                 const int hOffset = Menu::horizontalShadowMargin(this, option, widget, m_data->menuConfig);
                 if (hOffset != std::numeric_limits<int>::lowest())
@@ -1109,7 +1106,7 @@ namespace AzQtComponents
                 break;
             }
 
-            case QStyle::PM_MenuVPlacementOffset:
+            case QStyle::PM_MenuBarVMargin:
             {
                 const int vOffset = Menu::verticalShadowMargin(this, option, widget, m_data->menuConfig);
                 if (vOffset != std::numeric_limits<int>::lowest())
@@ -1205,7 +1202,6 @@ namespace AzQtComponents
             polishedAlready = polishedAlready || LineEdit::polish(this, widget, m_data->lineEditConfig);
             polishedAlready = polishedAlready || BrowseEdit::polish(this, widget, m_data->browseEditConfig, m_data->lineEditConfig);
             polishedAlready = polishedAlready || ComboBox::polish(this, widget, m_data->comboBoxConfig);
-            polishedAlready = polishedAlready || AssetFolderThumbnailView::polish(this, widget, m_data->scrollBarConfig, m_data->assetFolderThumbnailViewConfig);
             polishedAlready = polishedAlready || FilteredSearchWidget::polish(this, widget, m_data->filteredSearchWidgetConfig);
             polishedAlready = polishedAlready || TableView::polish(this, widget, m_data->scrollBarConfig, m_data->tableViewConfig);
             polishedAlready = polishedAlready || TitleBar::polish(this, widget, m_data->titleBarConfig);

@@ -15,7 +15,7 @@ set(CMAKE_AUTOUIC ON)
 
 # Find all header files in AzCore directory
 file(GLOB_RECURSE AZCORE_HEADER_FILES
-    "${CMAKE_CURRENT_SOURCE_DIR}/../AzCore/*.h"
+    "../AzCore/*.h"
 )
 
 file(GLOB_RECURSE AZQTCOMPONENTS_SOURCE_FILES
@@ -26,9 +26,12 @@ file(GLOB_RECURSE AZQTCOMPONENTS_SOURCE_FILES
 file(GLOB_RECURSE AZQTCOMPONENTS_HEADER_FILES
 "${CMAKE_CURRENT_SOURCE_DIR}/AzQtComponents/*.h"
 )
-
-# include_directories(${AZCORE_HEADER_FILES})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../AzCore)
+include_directories(${AZCORE_HEADER_FILES})
 include_directories(${AZQTCOMPONENTS_HEADER_FILES})
+include_directories(${Qt5Widgets_PRIVATE_INCLUDE_DIRS})
+include_directories(${Qt5Gui_PRIVATE_INCLUDE_DIRS})
+
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
@@ -79,7 +82,7 @@ target_link_libraries(
         # Az::AzCore
         Qt::Core
         Qt::Gui
-        Magnification
+        Magnification.lib
     PUBLIC
         Qt::Widgets
         Qt::Svg
@@ -110,7 +113,9 @@ target_link_libraries(
     PRIVATE
         Qt::Core
         Qt::Gui
+        Qt::GuiPrivate
         Qt::Svg
         Qt::Widgets
+        Qt::WidgetsPrivate
         # Az::AzQtComponents
 )

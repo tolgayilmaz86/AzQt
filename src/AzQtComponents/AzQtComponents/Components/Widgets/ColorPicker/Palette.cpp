@@ -230,7 +230,7 @@ bool Palette::isValid() const
 {
     // If a vector of only unique colors is smaller than our colors, we have duplicates and are invalid
     QVector<AZ::Color> truth(m_colors);
-    std::sort(truth.begin(), truth.end(), [](const AZ::Color& l, const AZ::Color& r) { return l.IsLessThan(r); });
+    std::sort(truth.begin(), truth.end(), [](const AZ::Color& l, const AZ::Color& r) { return l.GetA() < r.GetA(); });
     truth.erase(std::unique(truth.begin(), truth.end()), truth.end());
     return truth.size() == m_colors.size();
 }

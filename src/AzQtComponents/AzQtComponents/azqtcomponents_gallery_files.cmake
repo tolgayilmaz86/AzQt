@@ -7,10 +7,6 @@
 #
 
 set(FILES
-    Gallery/AssetBrowserFolderPage.ui
-    Gallery/AssetBrowserFolderPage.cpp
-    Gallery/AssetBrowserFolderPage.h
-    Gallery/AssetBrowserFolderPage.qrc
     Gallery/BreadCrumbsPage.ui
     Gallery/BreadCrumbsPage.cpp
     Gallery/BreadCrumbsPage.h
@@ -66,9 +62,6 @@ set(FILES
     Gallery/RadioButtonPage.ui
     Gallery/RadioButtonPage.cpp
     Gallery/RadioButtonPage.h
-    Gallery/ReflectedPropertyEditorPage.ui
-    Gallery/ReflectedPropertyEditorPage.cpp
-    Gallery/ReflectedPropertyEditorPage.h
     Gallery/resources.qrc
     Gallery/ScrollBarPage.ui
     Gallery/ScrollBarPage.cpp

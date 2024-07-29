@@ -106,8 +106,6 @@ set(FILES
     Components/FlowLayout.cpp
     Components/resources.qrc
     Components/Widgets/BaseStyleSheet.qss
-    Components/Widgets/AssetFolderListView.cpp
-    Components/Widgets/AssetFolderListView.h
     Components/Widgets/AssetFolderListView.qss
     Components/Widgets/AssetFolderTableView.cpp
     Components/Widgets/AssetFolderTableView.h

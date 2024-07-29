@@ -1530,7 +1530,6 @@ bool ColorPicker::eventFilter(QObject* o, QEvent* e)
 
 void ColorPicker::hideEvent(QHideEvent* event)
 {
-    AZ_UNUSED(event);
     m_colorGrid->StopSelection();
 }
 

@@ -8,11 +8,6 @@
 
 #include "TableViewPage.h"
 
-#include <AzToolsFramework/UI/Logging/LogTableModel.h>
-#include <AzToolsFramework/UI/Logging/LogTableItemDelegate.h>
-
-#include <AzToolsFramework/UI/Logging/LogLine.h>
-
 #include <AzQtComponents/Components/Widgets/Text.h>
 
 #include <AzQtComponents/Gallery/ui_TableViewPage.h>
@@ -43,48 +38,22 @@ public:
     }
 };
 
-static void AppendMessage(AzToolsFramework::Logging::LogTableModel* logModel, const char* message)
+static void AppendMessage(const char* message)
 {
-    logModel->AppendLine(
-        AzToolsFramework::Logging::LogLine(
-            message,
-            "Window",
-            AzToolsFramework::Logging::LogLine::TYPE_MESSAGE,
-            QDateTime::currentMSecsSinceEpoch()));
+
 }
 
-static void AppendWarning(AzToolsFramework::Logging::LogTableModel* logModel, const char* message)
+static void AppendWarning(const char* message)
 {
-    logModel->AppendLine(
-        AzToolsFramework::Logging::LogLine(
-            message,
-            "Window",
-            AzToolsFramework::Logging::LogLine::TYPE_WARNING,
-            QDateTime::currentMSecsSinceEpoch()));
+
 }
 
-static void AppendError(AzToolsFramework::Logging::LogTableModel* logModel, const char* message)
+static void AppendError(const char* message)
 {
-    logModel->AppendLine(
-        AzToolsFramework::Logging::LogLine(
-            message,
-            "Window",
-            AzToolsFramework::Logging::LogLine::TYPE_ERROR,
-            QDateTime::currentMSecsSinceEpoch()));
 }
 
-static void AppendContextToPreviousLine(AzToolsFramework::Logging::LogTableModel* logModel, const char* key, const char* value)
+static void AppendContextToPreviousLine(const char* key, const char* value)
 {
-    // Context data format is C: [key] = value
-    QString temp(QStringLiteral("C: [%0] = %1").arg(key, value));
-
-    QByteArray tempUtf8 = temp.toUtf8();
-    logModel->AppendLine(
-        AzToolsFramework::Logging::LogLine(
-            tempUtf8.data(),
-            "Window",
-            AzToolsFramework::Logging::LogLine::TYPE_CONTEXT,
-            QDateTime::currentMSecsSinceEpoch()));
 }
 
 TableViewPage::TableViewPage(QWidget* parent)
@@ -117,27 +86,25 @@ TableViewPage::TableViewPage(QWidget* parent)
     ui->tableView2->setModel(fruitModel);
     ui->tableView2->setHeaderHidden(true);
 
-    auto logModel = new AzToolsFramework::Logging::LogTableModel(this);
+    AppendMessage("An informative message for debugging purposes.");
 
-    AppendMessage(logModel, "An informative message for debugging purposes.");
+    AppendWarning("A warning message for things that may not have gone as expected.");
+    AppendContextToPreviousLine("Who", "James");
+    AppendContextToPreviousLine("What", "Break his leg");
 
-    AppendWarning(logModel, "A warning message for things that may not have gone as expected.");
-    AppendContextToPreviousLine(logModel, "Who", "James");
-    AppendContextToPreviousLine(logModel, "What", "Break his leg");
+    AppendError("Critical error message, something went wrong.");
+    AppendContextToPreviousLine("Who", "Sonia");
+    AppendContextToPreviousLine("What", "Bought a jewel");
 
-    AppendError(logModel, "Critical error message, something went wrong.");
-    AppendContextToPreviousLine(logModel, "Who", "Sonia");
-    AppendContextToPreviousLine(logModel, "What", "Bought a jewel");
-
-    ui->logTableView->setModel(logModel);
+    // ui->logTableView->setModel(logModel);
     ui->logTableView->setExpandOnSelection();
-    auto logItemDelegate = new AzToolsFramework::Logging::LogTableItemDelegate(ui->logTableView);
-    ui->logTableView->setItemDelegate(logItemDelegate);
+    // auto logItemDelegate = new AzToolsFramework::Logging::LogTableItemDelegate(ui->logTableView);
+    // ui->logTableView->setItemDelegate(logItemDelegate);
 
     // Example of changing the header section background color
     ui->logTableView->setStyleSheet("QHeaderView::section { background: transparent; }");
 
-    ui->qTableView->setModel(logModel);
+    // ui->qTableView->setModel(logModel);
     ui->qTableView->setAlternatingRowColors(true);
     ui->qTableView->setShowGrid(false);
     ui->qTableView->horizontalHeader()->setStretchLastSection(true);

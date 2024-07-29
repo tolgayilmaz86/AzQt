@@ -8,8 +8,6 @@
 
 #pragma once
 
-//#include <AzCore/Math/Internal/MathTypes.h>
-//#include <AzCore/RTTI/TypeInfoSimple.h>
 #include <float.h>
 
 namespace AZ

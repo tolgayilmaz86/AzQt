@@ -6,8 +6,6 @@
  *
  */
 
-//#include <AzCore/Casting/numeric_cast.h>
-
 #include <AzQtComponents/Components/Widgets/Card.h>
 #include <AzQtComponents/Components/Widgets/CardHeader.h>
 #include <AzQtComponents/Components/Widgets/CardNotification.h>
@@ -22,6 +20,7 @@
 #include <QStyle>
 #include <QPoint>
 #include <QSettings>
+#include <QStyleOption>
 
 namespace AzQtComponents
 {
@@ -423,7 +422,7 @@ namespace AzQtComponents
 
     QPixmap Card::generatedIconPixmap(QIcon::Mode iconMode, const QPixmap& pixmap, const QStyleOption* option, const QWidget* widget, const Config& config)
     {
-        const auto* iconWidget = widget ? widget : qobject_cast<QWidget*>(option->styleObject);
+        const QWidget* iconWidget = widget ? widget : qobject_cast<QWidget*>(option->styleObject);
         if (CardHeader::isCardHeaderMenuButton(iconWidget))
         {
             // don't gray out menu icons in the header, even if the card is disabled

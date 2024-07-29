@@ -27,15 +27,16 @@ namespace AzQtComponents
         {
 #if !defined(AZ_PLATFORM_LINUX)
             // Enable optimizations
-            QStyle::enableMinimizePolishOptimizations(true);
+            // QStyle::enableMinimizePolishOptimizations(true);
 #endif // !defined(AZ_PLATFORM_LINUX)
         }
 
         ~RepolishMinimizer()
         {
 #if !defined(AZ_PLATFORM_LINUX)
+// TODO
             // Disable optimizations. Back to normal.
-            QStyle::enableMinimizePolishOptimizations(false);
+            // QStyle::enableMinimizePolishOptimizations(false);
 #endif // !defined(AZ_PLATFORM_LINUX)
         }
 

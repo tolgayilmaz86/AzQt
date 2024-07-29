@@ -8,9 +8,6 @@
 
 #include <cmath>
 
-//#include <AzCore/Casting/numeric_cast.h>
-//#include <AzCore/Debug/Trace.h>
-
 #include <AzQtComponents/Components/DockTabBar.h>
 #include <AzQtComponents/Components/FancyDocking.h>
 #include <AzQtComponents/Components/FancyDockingGhostWidget.h>
@@ -42,6 +39,7 @@
 #include <QStyleOptionToolButton>
 #include <QVBoxLayout>
 #include <QWindow>
+// todo
 #include <QtGui/private/qhighdpiscaling_p.h>
 
 
@@ -2469,7 +2467,7 @@ namespace AzQtComponents
             // virtualGeometry!
             QScreen* fromScreen = dock->screen();
             QScreen* toScreen = Utilities::ScreenAtPoint(placeholderRect.topLeft());
-
+// TODO
             if (fromScreen != toScreen)
             {
                 qreal factorRatio = QHighDpiScaling::factor(fromScreen) / QHighDpiScaling::factor(toScreen);

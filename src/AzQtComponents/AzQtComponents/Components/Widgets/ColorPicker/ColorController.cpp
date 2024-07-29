@@ -10,9 +10,6 @@
 #include <AzQtComponents/Components/Widgets/ColorPicker/ColorValidator.h>
 #include <AzQtComponents/Components/Widgets/ColorPicker/Palette.h> // needed for Q_DECLARE_METATYPE(AZ::Color);
 #include <AzQtComponents/Utilities/ColorUtilities.h>
-//#include <AzQtComponents/Utilities/Conversions.h>
-//#include <AzCore/Math/MathUtils.h>
-//#include <AzCore/Casting/numeric_cast.h>
 #include <QSignalBlocker>
 #include <QScopedValueRollback>
 #include <QVector>

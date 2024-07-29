@@ -17,7 +17,5 @@ set(FILES
     ../../Components/TitleBarOverdrawHandler_win.cpp
     ../../Components/TitleBarOverdrawScreenHandler_win.h
     ../../Components/TitleBarOverdrawScreenHandler_win.cpp
-    ../../../Platform/Windows/AzQtComponents/Components/StyledDockWidget_Windows.cpp
-    ../../../Platform/Windows/AzQtComponents/AzQtComponents_Traits_Windows.h
-    ../../../Platform/Windows/AzQtComponents/AzQtComponents_Traits_Platform.h
+    ../../Components/StyledDockWidget_Windows.cpp
 )

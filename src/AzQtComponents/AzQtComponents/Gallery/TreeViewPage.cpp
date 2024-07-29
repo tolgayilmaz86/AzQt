@@ -8,8 +8,6 @@
 
 #include "TreeViewPage.h"
 
-#include <AzCore/Casting/numeric_cast.h>
-
 #include <AzQtComponents/Components/Widgets/Text.h>
 #include <AzQtComponents/Components/Widgets/TreeView.h>
 
@@ -90,7 +88,7 @@ namespace
                 return child.get() == parent;
             });
             Q_ASSERT(it != children.end());
-            return createIndex(aznumeric_cast<int>(std::distance(children.begin(), it)), 0, const_cast<TreeNode*>(parentOfParent));
+            return createIndex(static_cast<int>(std::distance(children.begin(), it)), 0, const_cast<TreeNode*>(parentOfParent));
         }
 
         int rowCount(const QModelIndex& parent = {}) const override

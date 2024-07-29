@@ -202,13 +202,11 @@ namespace AzQtComponents
         QMutexLocker locker(&g_internalInstancesLock);
         if (!g_internalInstances)
         {
-            //AZ_Warning("ScreenGrabber", false, "Callback for unknown Magnification API control handle");
             return false;
         }
         auto instance = g_internalInstances->find(magnifier);
         if (instance == g_internalInstances->end())
         {
-            //AZ_Warning("ScreenGrabber", false, "Callback for unknown Magnification API control handle");
             return false;
         }
 

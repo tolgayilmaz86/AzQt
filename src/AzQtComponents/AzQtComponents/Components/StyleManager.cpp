@@ -35,7 +35,7 @@
 namespace AzQtComponents
 {
 
-    constexpr QStringView g_styleSheetRelativePath {u"Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets"};
+    constexpr QStringView g_styleSheetRelativePath {u"AzQtComponents/AzQtComponents/Components/Widgets"};
     constexpr QStringView g_styleSheetResourcePath {u":AzQtComponents/Widgets"};
     constexpr QStringView g_globalStyleSheetName {u"BaseStyleSheet.qss"};
     constexpr QStringView g_searchPathPrefix {u"AzQtComponentWidgets"};
@@ -106,12 +106,6 @@ namespace AzQtComponents
             return nullptr;
         }
 
-        if (!QApplication::testAttribute(Qt::AA_ManualStyleSheetStyle))
-        {
-            qFatal("StyleManager::styleSheetStyle has not been implemented for automatically created QStyleSheetStyles");
-            return nullptr;
-        }
-
         return s_instance->m_styleSheetStyle;
     }
 
@@ -160,8 +154,8 @@ namespace AzQtComponents
         }
         s_instance = this;
 
-        QApplication::setAttribute(Qt::AA_ManualStyleSheetStyle, true);
-        QApplication::setAttribute(Qt::AA_PropagateStyleToChildren, true);
+        QApplication::setAttribute(Qt::AA_UseStyleSheetPropagationInWidgetStyles, true);
+        // QApplication::setAttribute(Qt::AA_PropagateStyleToChildren, true);
 
         connect(application, &QCoreApplication::aboutToQuit, this, &StyleManager::cleanupStyles);
 
@@ -260,7 +254,7 @@ namespace AzQtComponents
     void StyleManager::refresh()
     {
         const auto globalStyleSheet = m_stylesheetCache->loadStyleSheet(g_globalStyleSheetName.toString());
-        m_styleSheetStyle->setGlobalSheet(globalStyleSheet);
+        qApp->setStyleSheet(globalStyleSheet);
 
         // Iterate widgets and update the stylesheet (the base style has already been set)
         auto i = m_widgetToStyleSheetMap.constBegin();

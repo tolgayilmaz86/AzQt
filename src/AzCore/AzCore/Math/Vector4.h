@@ -9,6 +9,7 @@
 #pragma once
 
 #include <float.h>
+#include <cmath>
 
 namespace AZ
 {
@@ -296,5 +297,89 @@ namespace AZ
 
         //! Returns true if the vector contains no nan or inf values, false if at least one element is not finite.
         bool IsFinite() const;
+
+    protected:
+        union
+        {
+            float m_value;
+            float m_values[4];
+
+            struct
+            {
+                float m_x;
+                float m_y;
+                float m_z;
+                float m_w;
+            };
+        };
     };
+    
+    __forceinline Vector4::Vector4(float x)
+        : m_value(x)
+    {
+    }
+
+    __forceinline float Vector4::GetX() const
+    {
+        return m_x;
+    }
+
+    __forceinline float Vector4::GetY() const
+    {
+        return m_y;
+    }
+
+    __forceinline float Vector4::GetZ() const
+    {
+        return m_z;
+    }
+
+    __forceinline float Vector4::GetW() const
+    {
+        return m_w;
+    }
+    
+    __forceinline void Vector4::SetX(float x)
+    {
+        m_x = x;
+    }
+
+    __forceinline void Vector4::SetY(float y)
+    {
+        m_y = y;
+    }
+
+    __forceinline void Vector4::SetZ(float z)
+    {
+        m_z = z;
+    }
+
+    __forceinline void Vector4::SetW(float w)
+    {
+        m_w = w;
+    }
+
+    __forceinline void Vector4::Set(float x)
+    {
+        m_x = x;
+    }
+
+    __forceinline void Vector4::Set(float x, float y, float z, float w)
+    {
+        m_x = x;
+        m_y = y;
+        m_z = z;
+        m_w = w;
+    }
+
+    __forceinline Vector4 Vector4::GetAbs() const
+    {
+        return Vector4(std::abs(m_value));
+    }
+
+    __forceinline bool Vector4::IsClose(const Vector4& v, float tolerance) const
+    {
+        Vector4 dist = (v - (*this)).GetAbs();
+        return dist.m_x < tolerance;
+    }
 }

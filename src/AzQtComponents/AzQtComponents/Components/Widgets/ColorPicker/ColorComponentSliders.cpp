@@ -10,8 +10,6 @@
 #include <AzQtComponents/Components/Widgets/SpinBox.h>
 #include <AzQtComponents/Components/Widgets/ColorPicker/ColorController.h>
 #include <AzQtComponents/Utilities/Conversions.h>
-//#include <AzCore/Math/MathUtils.h>
-//#include <AzCore/Casting/numeric_cast.h>
 
 #include <QIntValidator>
 #include <QLabel>
